@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reservatie</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container cf">
+            <h1 class="logo">Logo </h1>
+            <nav class="main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="index.html">Home</a></button>
+                    <div class="dropdown-content">
+                        <a href="agenda.html">Agenda</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn active"><a href="reservatie.html">Reservatie</a></button>
+                    <div class="dropdown-content">
+                        <a href="agenda.html">Membership</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn active"><a href="contact.html contact">Contact</a></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Reserveer een plaats</h1>
+        <img src="img/map.png" alt="kaart">
+        <p>U heeft de keuze om te reserveren op verschillende locaties in onze ruime zaal. Samen met vrienden gezellig een drankje benuttigen in een gesloten ruimte of naast de knappe DJ staan, is allemaal mogelijk. Daarbij kunt u vrijblijvend een pakket kiezen.<br>
+            First base: voor een meerprijs van 200 euro krijgt u 2 flessen champagne en snacks.<br>
+            Second base: voor een meerprijs van 500 euro krijgt u 5 flessen champagne en snacks.<br>
+            Third base: voor een meerprijs van 900 euro krijgt 10 flessen champagne en snacks samen met een exotische dans van onze mannelijke en vrouwelijke performers.<br>
+            Home base: voor een meerprijs van 1000 euro krijgt u all-in met een happy ending verzekerd.
+        </p>
+        <form action="">
+            <fieldset class="reservatie">
+                <p><label for="voornaam">Voornaam</label> en <label for="achternaam"> achternaam</label> <input type="text" id="voornaam" required=""> <input type="text" id="achternaam" required>
+                </p>
+                <p>
+                    <label for="email">Email</label> <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="aantal">Aantal personen</label> <input type="number" name="aantal" id="aantal" min="1" max="100" required>
+                </p>
+                <p>
+                    <label for="opties">Zone</label> en <label for="tafel" required>tafel</label>
+                    <select>
+                        <option value="">VIP Box</option>
+                        <option value="">Hightable</option>
+                        <option value="">Hightables Dancefloor</option>
+                        <option value="">Dancefloor Seats</option>
+                        <option value="">Jukebox Tables</option>
+                        <option value="">VIP Next to DJ</option>
+                    </select>
+                    <input type="number" name="tafel" id="tafel" min="1" max="10" required="">
+                </p>
+                <p><label for="datum">Datum</label> <input type="date" name="datum" id="datum" required></p>
+                <p><label for="uur">Uur</label> <input type="time" name="time" id="tijd" required></p>
+                <p><label for="pakket">Pakket</label>
+                    <label><input type="radio" name="pakket" value="first">First Base</label>
+                    <label><input type="radio" name="pakket" value="second">Second Base</label>
+                    <label><input type="radio" name="pakket" value="third">Third Base</label>
+                    <label><input type="radio" name="pakket" value="home">Home Base</label>
+                </p>
+                <button type="submit">Betalen</button>
+            </fieldset>
+        </form>
+    </div>
+    <aside class="subfooter cf">
+        <div class="container">
+            <section class="subfooter-column left">
+                <h1 class="subfooter-title ">Adres</h1>
+                <p>Liefdesstraat 69</p>
+                <p>1010 Tinderstad</p>
+            </section>
+            <section class="subfooter-column right">
+                <h1 class="subfooter-title ">Openingsuren</h1>
+                <p>23PM - 06AM</p>
+                <p>VRIJDAG-ZATERDAG-ZONDAG</p>
+            </section>
+        </div>
+    </aside>
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2020 TinderClub - All Rights Reserved. </p>
+        </div>
+    </footer>
+</body>
+
+</html>
