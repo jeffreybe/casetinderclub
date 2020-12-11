@@ -1,9 +1,13 @@
-
+@import url("https://use.typekit.net/acr7qdb.css");
 
 .cf:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+body {
+	font-family: "Proxima Nova", sans-serif;
 }
 
 .container {
@@ -17,15 +21,39 @@
 
 
 /*FOOTER*/
+.subfooter {
+	background-color: #FF6A6A;
+	color: white;
+}
+
+.subfooter-title{
+	font-size: 15px;
+	border-bottom: .5px solid white;
+}
+
+.subfooter p {
+	font-size: 15px;
+}
+.subfooter-column.left{
+	float: left;
+	
+}
+
+.subfooter-column.right {
+	float: right;
+	
+}
 
 .main-footer {
 	background-color: #FF6A6A;
 	color: white;
-	padding: 1rem 0;
-	text-align:center;
+	padding: .2rem;
+	text-align: right;
 }
 
-
+.main-footer p {
+	font-size: 12px;
+}
 
 /*KLEUREN
 
