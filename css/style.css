@@ -8,6 +8,8 @@
 
 body {
 	font-family: "Proxima Nova", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -16,23 +18,31 @@ body {
 }
  /*HEADER*/
 
+header {
+	background-image: url(../img/DJ-cropped.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
 /*BUTTON DROPDOWN*/
 
 nav a {
 	text-decoration: none;
 }
-button a {
+button {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+}
+
+.contact {
 	color: white;
 }
 
-a.contact {
-	background-color: #FF6A6A;
-	color:white;
-}
-
 .dropbtn {
-  background-color: #FF6A6A;
-  color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -46,7 +56,6 @@ a.contact {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
   min-width: 160px;
 }
 
@@ -58,15 +67,14 @@ a.contact {
 }
 
 .dropdown-content a:hover {
-	background-color: #FF6A6A;
 	color:white;
   }
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {
-	background-color: #f5a6a6;
-	color:white;
+	
+	
 }
 
 /*HOME PAGINA CONTENT*/
@@ -98,7 +106,7 @@ aside.subfooter {
 }
 
 .subfooter-column.right {
-	float: right;
+	
 	
 }
 
