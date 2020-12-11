@@ -19,8 +19,8 @@
 /*FOOTER*/
 
 .main-footer {
-	background-color: rgb(159,159,159);
-	color: rgba(0,0,0,.4);
+	background-color: #FF6A6A;
+	color: white;
 	padding: 1rem 0;
 	text-align:center;
 }
