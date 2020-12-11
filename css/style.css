@@ -1,0 +1,36 @@
+
+
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+ /*HEADER*/
+
+
+/*HOME PAGINA CONTENT*/
+
+
+/*FOOTER*/
+
+.main-footer {
+	background-color: rgb(159,159,159);
+	color: rgba(0,0,0,.4);
+	padding: 1rem 0;
+	text-align:center;
+}
+
+
+
+/*KLEUREN
+
+LOGO KLEUR #FF6A6A
+
+
+
+*/
