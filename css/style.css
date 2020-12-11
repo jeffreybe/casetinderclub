@@ -13,29 +13,36 @@ body {
 }
 
 .container {
-	width: 1000px;
+	width: 1200px;
 	margin: 0 auto;
 }
  /*HEADER*/
 
 header {
-	background-image: url(../img/DJ-cropped.jpg);
+	
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 500px;
+	height: 150px;
+}
+
+hr {
+	opacity: 30%;
+	box-shadow: 0px 0px 15px #141414;
 }
 
 /*BUTTON DROPDOWN*/
 
 nav a {
 	text-decoration: none;
+	color: #FB2F78;
 }
+
 button {
-	background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden; 
+    background-color: transparent;
 }
 
 .contact {
@@ -124,7 +131,14 @@ aside.subfooter {
 /*KLEUREN
 
 LOGO KLEUR #FF6A6A
-
+GRADIENT BUTTON #FB2F78 #FF6A6A 
+	background-image: url(../img/gradient-btn.jpg);
+    background-repeat:no-repeat;
+    background-size: 120px 50px;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
 
 
 */
