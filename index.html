@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
-	$, initial-scale=1.0">
+    $, initial-scale=1.0">
     <title>TindeDanceClub</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container cf">
+    <header>
+        <div class="main-header cf">
             <h1 class="logo">Logo </h1>
             <nav class="main-nav">
                 <div class="dropdown">
-                    <button class="dropbtn"><a href="index.html">Home</a></button>
+                    <button class="dropbtn"><a class="active" href="index.html">Home</a></button>
                     <div class="dropdown-content">
                         <a href="agenda.html">Agenda</a>
                     </div>
@@ -26,23 +26,21 @@
                         <a href="membership.html">Membership</a>
                     </div>
                 </div>
-                <a href="contact.html">Contact</a>
+                <div class="dropdown"><a href="contact.html">Contact</a></div>
             </nav>
         </div>
     </header>
     <hr>
     <div class="container">
-    	<!-- INTRO -->
+        <!-- INTRO -->
         <section class="intro">
             <h1>Welkom in onze Tinder Danceclub!</h1>
-            <p>Onze visie en doel is om iedereen die geen liefde heeft gevonden via de super famous tinder-app, de kans te geven om die te vinden op een leukere socialere manier nl. zwetend dansend op de ritmes van Taylor Swift en Cannibal Corpse. 
-            	<blockquote><q>Een match op Tinder? Hier voel je de vlinder</q>
-            	<p>&Jscr;ef &Gscr;eerts</p>
-            	</blockquote>
+            <p>Onze visie en doel is om iedereen die geen liefde heeft gevonden via de super famous tinder-app, de kans te geven om die te vinden op een leukere socialere manier nl. zwetend dansend op de ritmes van Taylor Swift en Cannibal Corpse.
+                <blockquote><q>Een match op Tinder? Hier voel je de vlinder</q>
+                    <p>&Jscr;ef &Gscr;eerts</p>
+                </blockquote>
             </p>
-
-          <button>Tinder</button>
-
+            <button>Tinder</button>
         </section>
         <!-- SLIDESHOW -->
         <section class="slideshow">
@@ -97,42 +95,39 @@
             </section>
         </div>
     </aside>
-
     <footer class="main-footer">
         <div class="container">
             <p>© 2020 TinderClub - All Rights Reserved. </p>
         </div>
     </footer>
-
 </body>
-
 <script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-	function plusSlides(n) {
-    	showSlides(slideIndex += n);
-	}
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-	function currentSlide(n) {
-    	showSlides(slideIndex = n);
-	}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-	function showSlides(n) {
+function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-	    if (n > slides.length) { slideIndex = 1 }
-	    if (n < 1) { slideIndex = slides.length }
-	    for (i = 0; i < slides.length; i++) {
-	        slides[i].style.display = "none";
-	    }
-	    for (i = 0; i < dots.length; i++) {
-	        dots[i].className = dots[i].className.replace(" active", "");
-	    }
-	    slides[slideIndex - 1].style.display = "block";
-	    dots[slideIndex - 1].className += " active";
-	}
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 </script>
 
 </html>
