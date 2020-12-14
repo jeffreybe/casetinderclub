@@ -1,5 +1,6 @@
-@import url("https://use.typekit.net/acr7qdb.css");
- @import url("https://use.typekit.net/lvz2dky.css");
+/*@import url("https://use.typekit.net/acr7qdb.css");
+ @import url("https://use.typekit.net/lvz2dky.css");*/
+ @import url("https://use.typekit.net/acr7qdb.css");
 
 .cf:after {
     content: "";
@@ -11,7 +12,7 @@ body {
     font-family: "Proxima Nova", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EBEAEA
+    /*background-color: #EBEAEA*/
 }
 
 .container {
@@ -41,21 +42,18 @@ body {
 		font-weight: bold;
 	}
 
-	hr {
+	/*hr {
 	    opacity: 20%;
 	    box-shadow: 0px 0px 15px #141414;
 	    width: 1300px;
-	}
+	}*/
 
-	.logo {
-		font-size: 2em
-	}
-
+	
 /*BUTTON DROPDOWN*/
 
 	nav a {
 	    text-decoration: none;
-	    color: #FB2F78;
+	    color: #FF6A6A;
 	}
 
 	button{
@@ -68,9 +66,10 @@ body {
 
 	.dropbtn {
 	    padding: 16px;
-	    font-size: 16px;
+	    font-size: 20px;
 	    border: none;
 	    font-weight:bold;
+	    b
 	}
 
 	.dropdown {
@@ -81,29 +80,29 @@ body {
 	.dropdown-content {
 	    display: none;
 	    position: absolute;
-	    min-width: 160px;
+	    
 	}
 
 	.dropdown-content a {
-	    color: #FF6A6A;
+	    color: #FB2F78;
+	    font-size: 20px;
 	    padding: 12px 16px;
 	    text-decoration: none;
 	    display: block;
 	}
 
 	.dropdown-content a:hover {
-	    color:black;
+	    color:white;
 	}
 
 	.dropdown:hover .dropdown-content {
 	    display: block;
+	    font-size: 2rem;
 	}
 
-	.dropdown:hover .dropbtn {}
 
 	a.active{
 		background-color: transparent;
-		color: black;
 		
 	}
 
@@ -121,12 +120,27 @@ body {
  }
 
 /*HOME PAGINA CONTENT*/
+
 .reservatie {
 	display: grid;
 	justify-items: center;
 }
 
+.intro p {
+	font-size: 1.5rem;
+	font-family: proxima-nova-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+}
 
+section.intro {
+	width: 100%;
+}
+
+blockquote {
+	/*margin: 2rem 0;
+	padding: 1rem;*/
+}
 
 /*SLIDESHOW*/
 
@@ -159,7 +173,8 @@ body {
 	    border-radius: 3px 0 0 3px;
 	}
 
-	/* On hover, add a black background color with a little bit see-through */
+	/* On hover, add a black background color 
+	with a little bit see-through */
 	.prev:hover,
 	.next:hover {
 	    background-color: rgba(0, 0, 0, 0.8);
@@ -213,37 +228,39 @@ body {
 /*CONTACT CONTENT*/
 
 
-.contact-page {
-	display: grid;
-	grid-template-columns: 50% 50%;
+.contact.container  {
 	
-	padding-top: 20px;
 }
 
-.openingsuren {
-	/*grid-area: "uren";*/
-	background-color: white;
+div.contact .col-left {
+	float: left;
+	width: 50%;
+} 
+
+div.contact .col-right {
+	float: right;
+	width: 50%;
 }
 
-.contact-info {
-	/*grid-area: "contact";*/
-	background-color: white;
+
+.openingsuren-box {
+	
 }
 
-.locatie-info {
-	/*grid-area: "locatie";*/
-
-	background-color: white;
+.contact-box {
+	
 }
 
-.googlemap{
-	/*grid-area: "map";*/
-	background-color: white;
+.locatie-box {
+	
 }
 
-.prijzen {	
-	/*grid-area: "prijs";*/
-	background-color: white;
+.googlemap-box{
+	
+}
+
+.prijs-box {	
+	
 }
 
 /*TEKST */
@@ -255,17 +272,39 @@ body {
 		font-weight:800;
 		text-align: center;
 		padding: 1em;
-		font-size:2.5em;
-		text-transform: uppercase
+		font-size:2em;
+		text-transform: uppercase;
 	}
 
-	p {
+	h2 {
+		font-size: 1rem;
+	}
+
+	p, td {
 		color: #2c2c2c;
+		font-size: 1rem;
 	}
 
 	ul {
 		list-style: none
 	}
+
+	td {
+		padding: 10px 0;
+	}
+
+	.highlight {
+		font-weight: bold;
+	}
+
+	.colspan {
+		margin-top: 5px;
+	}
+
+	p.subfooter {
+
+	}
+
 /*RESERVATIE*/
 
 	.image {
