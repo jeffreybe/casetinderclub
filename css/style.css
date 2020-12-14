@@ -126,6 +126,8 @@ body {
 	justify-items: center;
 }
 
+
+
 /*SLIDESHOW*/
 
 	.slideshow-container {
@@ -207,6 +209,42 @@ body {
 	    animation-name: fade;
 	    animation-duration: 1.5s;
 	}
+
+/*CONTACT CONTENT*/
+
+
+.contact-page {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+	padding-top: 20px;
+}
+
+.openingsuren {
+	/*grid-area: "uren";*/
+	background-color: white;
+}
+
+.contact-info {
+	/*grid-area: "contact";*/
+	background-color: white;
+}
+
+.locatie-info {
+	/*grid-area: "locatie";*/
+
+	background-color: white;
+}
+
+.googlemap{
+	/*grid-area: "map";*/
+	background-color: white;
+}
+
+.prijzen {	
+	/*grid-area: "prijs";*/
+	background-color: white;
+}
 
 /*TEKST */
 
