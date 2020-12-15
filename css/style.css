@@ -311,11 +311,23 @@ img.map {
     height: auto
 }
 
-.map-beschrijving p {
-    line-height: 20px;
-    padding:
+.map-beschrijving {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2em
 }
 
+.map-beschrijving p {
+    line-height: 20px;
+    width: 300px;
+
+
+}
+
+.map-beschrijving ul {
+	width: 500px;}
+	
 /*MEMBERSHIP*/
 
 .member {
@@ -340,12 +352,13 @@ img.map {
     color: white;
     display: inline-block;
     font-weight: bold;
-    margin-left: -10em;
+    margin-left: -5em;
     width: 2em
 }
 
 .kaart ul li {
     color: white;
+    text-align: 
 }
 
 /*FOOTER*/
