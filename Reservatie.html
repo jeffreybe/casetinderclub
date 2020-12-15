@@ -41,23 +41,40 @@
             <p>U heeft de keuze om te reserveren op verschillende locaties in onze ruime zaal. Samen met vrienden gezellig een drankje benuttigen in een gesloten ruimte of naast de knappe DJ staan, is allemaal mogelijk. Daarbij kunt u vrijblijvend een pakket kiezen.</p>
             <ul>
                 <li>First base: voor een meerprijs van 200 euro krijgt u 2 flessen champagne en snacks.</li><br>
-                <li>Second base: voor een meerprijs van 500 euro krijgt u 5 flessen champagne en snacks.</li><br>   
+                <li>Second base: voor een meerprijs van 500 euro krijgt u 5 flessen champagne en snacks.</li><br>
                 <li>Third base: voor een meerprijs van 900 euro krijgt 10 flessen champagne en snacks samen met een exotische dans van onze mannelijke en vrouwelijke performers.</li><br>
                 <li> Home base: voor een meerprijs van 1000 euro krijgt u all-in met een happy ending verzekerd.</li><br>
             </ul>
         </article>
-        <form action="">
-            <fieldset class="reservatie">
-                <p><label for="voornaam">Voornaam</label> en <label for="achternaam"> achternaam</label> <input type="text" id="voornaam" required=""> <input type="text" id="achternaam" required>
+        <form class="reservatie" action="">
+
+            <fieldset> 
+                <legend>Algemene informatie</legend>
+                <p><label for="voornaam">Voornaam</label> <br>
+                    <input type="text" id="voornaam" required=""> </p>
+                <p><label for="achternaam">Achternaam</label> <br>
+                    <input type="text" id="achternaam" required>
                 </p>
                 <p>
-                    <label for="email">Email</label> <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email" required>
                 </p>
                 <p>
-                    <label for="aantal">Aantal personen</label> <input type="number" name="aantal" id="aantal" min="1" max="100" required>
+                    <label for="aantal">Aantal personen</label> <br>
+                    <input type="number" name="aantal" id="aantal" min="1" max="100" required>
                 </p>
+                 <p><label for="pakket">Pakket:</label>
+                    <label><input type="radio" name="pakket" value="first">First Base</label>
+                    <label><input type="radio" name="pakket" value="second">Second Base</label>
+                    <label><input type="radio" name="pakket" value="third">Third Base</label>
+                    <label><input type="radio" name="pakket" value="home">Home Base</label>
+                </p>
+                <button class="click">Betalen</button>
+            </fieldset>
+            <fieldset>
+                <legend>Bestelling</legend>
                 <p>
-                    <label for="opties">Zone</label>
+                    <label for="opties">Zone</label> <br>
                     <select>
                         <option value="">VIP Box</option>
                         <option value="">Hightable</option>
@@ -65,18 +82,12 @@
                         <option value="">Dancefloor Seats</option>
                         <option value="">Jukebox Tables</option>
                         <option value="">VIP Next to DJ</option>
-                    </select>
-                    <label for="tafel" required>Tafel</label><input type="number" name="tafel" id="tafel" min="1" max="10" required="">
+                    </select></p>
+                <p><label for="tafel" required>Tafel </label><br><input type="number" name="tafel" id="tafel" min="1" max="10" required="">
                 </p>
-                <p><label for="datum">Datum</label> <input type="date" name="datum" id="datum" required></p>
-                <p><label for="uur">Uur</label> <input type="time" name="time" id="tijd" required></p>
-                <p><label for="pakket">Pakket</label>
-                    <label><input type="radio" name="pakket" value="first">First Base</label>
-                    <label><input type="radio" name="pakket" value="second">Second Base</label>
-                    <label><input type="radio" name="pakket" value="third">Third Base</label>
-                    <label><input type="radio" name="pakket" value="home">Home Base</label>
-                </p>
-                <button type="submit">Betalen</button>
+                <p><label for="datum">Datum</label> <br> <input type="date" name="datum" id="datum" required></p>
+                <p><label for="uur">Uur</label> <br><input type="time" name="time" id="tijd" required></p>
+                
             </fieldset>
         </form>
     </div>
