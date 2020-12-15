@@ -74,7 +74,7 @@ button {
     font-size: 20px;
     border: none;
     font-weight: bold;
-    b
+    
 }
 
 .dropdown {
@@ -97,7 +97,7 @@ button {
 }
 
 .dropdown-content a:hover {
-    color: white;
+    color: #FB2F78;
 }
 
 .dropdown:hover .dropdown-content {
@@ -151,11 +151,14 @@ blockquote {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 100%;
-    text-align: center;
-    padding: 1em
+    text-align:center;
+    border: 5px solid red;
+    border-radius: 2em
 }
 
+.validate div {
+	padding:1em;
+}
 
 /*SLIDESHOW*/
 
@@ -247,12 +250,12 @@ blockquote {
 .event-datum {
     max-width: 200px;
     max-height: 200px;
-    background-color: #FF6A6A;
+    background-color: #FB2F78;
     align-items: center
 }
 
 .event-datum h1 {
-    color: white;
+    color:white;
 }
 
 .event-foto {
@@ -260,7 +263,7 @@ blockquote {
     height: 200px;
     align-self: center;
     text-align: center;
-    background-image: url(../img/jeffrey-1.jpg)
+    background-image: url(../img/valentinder.jpg)
 }
 
 .event-foto-img {
@@ -282,8 +285,7 @@ div.contact .col-right {
     width: 50%;
 }
 
-.contact-table {
-	}
+.contact-table {}
 
 
 .openingsuren-box {}
@@ -327,9 +329,12 @@ td {
     padding: 10px 0;
 }
 
-a:link, a:visited, a:hover, a:active {
-	text-decoration: none;
-	color: white;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
 }
 
 .highlight {
