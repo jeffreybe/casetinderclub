@@ -1,6 +1,12 @@
 // SCRIPT FORMULIER
 
 
+
+
+
+
+//MAILCHIMP 
+
 // SCRIPT SLIDESHOW
 var slideIndex = 1;
 showSlides(slideIndex);

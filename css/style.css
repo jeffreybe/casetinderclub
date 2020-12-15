@@ -1,5 +1,5 @@
-/*@import url("https://use.typekit.net/acr7qdb.css");
- @import url("https://use.typekit.net/lvz2dky.css");*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/acr7qdb.css");
 @import url("https://use.typekit.net/acr7qdb.css");
 
 .cf:after {
@@ -132,7 +132,7 @@ button.click {
 
 .intro p {
     font-size: 1.5rem;
-    font-family: proxima-nova-condensed, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 200;
 }
@@ -142,15 +142,22 @@ section.intro {
 }
 
 blockquote {
-    /*margin: 2rem 0;
-	padding: 1rem;*/
+    padding: 20px 0;
+    width: 1000px;
+    font-family: coquette, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(255,106,106,0.05);
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 
 #mc_embed_signup {
     background: #fff;
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1rem;
     text-align:center;
     border: 5px solid red;
     border-radius: 2em
@@ -172,7 +179,6 @@ blockquote {
     margin: auto;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -189,20 +195,17 @@ blockquote {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color 
-	with a little bit see-through */
+
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -219,7 +222,6 @@ blockquote {
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;

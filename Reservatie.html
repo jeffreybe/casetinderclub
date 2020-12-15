@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservatie</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,22 +17,27 @@
             </div>
             <nav class="main-nav">
                 <div class="dropdown">
-                    <button class="dropbtn"><a href="index.html">Home</a></button>
+                    <button class="dropbtn">
+                        <a href="index.html">Home</a>
+                    </button>
                     <div class="dropdown-content">
                         <a href="agenda.html">Agenda</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn"><a class="active" href="reservatie.html">Reservatie</a></button>
+                    <button class="dropbtn">
+                        <a class="active" href="reservatie.html">Reservatie</a>
+                    </button>
                     <div class="dropdown-content">
                         <a href="membership.html">Membership</a>
                     </div>
                 </div>
-                <div class="dropdown"><a href="contact.html">Contact</a></div>
+                <div class="dropdown">
+                    <a href="contact.html">Contact</a>
+                </div>
             </nav>
         </div>
     </header>
-    <!-- <hr> -->
     <div class="container">
         <h1>Reserveer een tafel</h1>
         <figure class="image">
@@ -47,8 +53,7 @@
             </ul>
         </article>
         <form class="reservatie" action="">
-
-            <fieldset> 
+            <fieldset>
                 <legend>Algemene informatie</legend>
                 <p><label for="voornaam">Voornaam</label> <br>
                     <input type="text" id="voornaam" required=""> </p>
@@ -63,7 +68,7 @@
                     <label for="aantal">Aantal personen</label> <br>
                     <input type="number" name="aantal" id="aantal" min="1" max="100" required>
                 </p>
-                 <p><label for="pakket">Pakket:</label>
+                <p><label for="pakket">Pakket:</label>
                     <label><input type="radio" name="pakket" value="first">First Base</label>
                     <label><input type="radio" name="pakket" value="second">Second Base</label>
                     <label><input type="radio" name="pakket" value="third">Third Base</label>
@@ -87,7 +92,6 @@
                 </p>
                 <p><label for="datum">Datum</label> <br> <input type="date" name="datum" id="datum" required></p>
                 <p><label for="uur">Uur</label> <br><input type="time" name="time" id="tijd" required></p>
-                
             </fieldset>
         </form>
     </div>
@@ -111,5 +115,6 @@
         </div>
     </footer>
 </body>
+<script src="js/script.js"></script>
 
 </html>
