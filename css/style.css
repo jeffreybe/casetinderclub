@@ -285,16 +285,25 @@ div.contact .col-right {
     width: 50%;
 }
 
-.contact-table {}
+.contact-table {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+
+}
 
 
 .openingsuren-box {}
 
 .contact-box {}
 
-.locatie-box {}
+.locatie-box {
+    text-align: center;
+}
 
-.googlemap-box {}
+.googlemap-box {
+    margin-top: 50px;
+}
 
 .prijs-box {}
 
@@ -313,6 +322,7 @@ h1 {
 
 h2 {
     font-size: 1rem;
+    font-style: italic;
 }
 
 p,
@@ -329,9 +339,12 @@ td {
     padding: 10px 0;
 }
 
+a:hover {
+     #FF6A6A;
+}
+
 a:link,
 a:visited,
-a:hover,
 a:active {
     text-decoration: none;
     color: white;
@@ -420,19 +433,9 @@ legend {
     padding: .5em 1em 0;
 }
 
-.kaart ul li::before {
-    content: "\2022";
-    color: white;
-    display: inline-block;
-    font-weight: bold;
-    margin-left: -5em;
-    width: 2em;
-
-}
-
 .kaart ul li {
     color: white;
-
+    text-decoration: none;
 }
 
 /*FOOTER*/
@@ -487,13 +490,4 @@ aside.subfooter {
 
 LOGO KLEUR #FF6A6A
 GRADIENT BUTTON #FB2F78 #FF6A6A 
-	background-image: url(../img/gradient-btn.jpg);
-    background-repeat:no-repeat;
-    background-size: 120px 50px;
-    border-radius: 20px;
-    border: none;
-    cursor:pointer;
-    overflow: hidden; 
-
-
 */
