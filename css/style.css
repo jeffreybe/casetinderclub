@@ -10,7 +10,7 @@
 
 body {
     font-family: "Proxima Nova", sans-serif;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     /*background-color: #EBEAEA*/
 }
@@ -127,7 +127,7 @@ button.click {
 /*HOME PAGINA CONTENT*/
 
 .slogan img {
-	width: 70%;
+    width: 70%;
 }
 
 .intro p {
@@ -146,10 +146,21 @@ blockquote {
 	padding: 1rem;*/
 }
 
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 1em
+}
+
+
 /*SLIDESHOW*/
 
 .slideshow img {
-	width: 1000px;
+    width: 1000px;
 }
 
 .slideshow-container {
@@ -216,43 +227,44 @@ blockquote {
 /*AGENDA*/
 
 .schema-tabel {
-	margin:auto;
-	text-align: left
+    margin: auto;
+    text-align: left
 }
 
-.schema-tabel th, .schema-tabel td {
-	padding: 1em
+.schema-tabel th,
+.schema-tabel td {
+    padding: 1em
 }
 
 .event {
     display: flex;
     flex-direction: row;
     justify-content: center;
-	align-self: center;
+    align-self: center;
     margin: 1em
 }
 
 .event-datum {
-	max-width: 200px;
-	max-height: 200px;
-	background-color:#FF6A6A;
-	align-items: center
+    max-width: 200px;
+    max-height: 200px;
+    background-color: #FF6A6A;
+    align-items: center
 }
 
 .event-datum h1 {
-	color:white;
+    color: white;
 }
 
 .event-foto {
-	width: 1000px;
-	height: 200px;
-	align-self: center;
-	text-align: center;
-	background-image: url(../img/jeffrey-1.jpg)
+    width: 1000px;
+    height: 200px;
+    align-self: center;
+    text-align: center;
+    background-image: url(../img/jeffrey-1.jpg)
 }
 
 .event-foto-img {
-	max-height: 200px
+    max-height: 200px
 }
 
 /*CONTACT CONTENT*/
@@ -312,6 +324,11 @@ td {
     padding: 10px 0;
 }
 
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: white;
+}
+
 .highlight {
     font-weight: bold;
 }
@@ -337,10 +354,10 @@ img.map {
 }
 
 .map-beschrijving {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 2em
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em
 }
 
 .map-beschrijving p {
@@ -351,28 +368,29 @@ img.map {
 }
 
 .map-beschrijving ul {
-	width: 500px;
+    width: 500px;
 }
 
 fieldset {
-	border: /*none*/
+    border:
+        /*none*/
 }
 
 legend {
-	font-weight: bold
+    font-weight: bold
 }
 
 .reservatie {
-	display: flex;
-	flex-direction: row;
-	justify-content:center;
-	width: 800px;
-	margin: auto;
-	
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+
 }
 
 
-	
+
 /*MEMBERSHIP*/
 
 .member {
@@ -406,7 +424,7 @@ legend {
 
 .kaart ul li {
     color: white;
-     
+
 }
 
 /*FOOTER*/
