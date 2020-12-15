@@ -74,7 +74,7 @@ button {
     font-size: 20px;
     border: none;
     font-weight: bold;
-    
+
 }
 
 .dropdown {
@@ -151,13 +151,13 @@ blockquote {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    text-align:center;
+    text-align: center;
     border: 5px solid red;
     border-radius: 2em
 }
 
 .validate div {
-	padding:1em;
+    padding: 1em;
 }
 
 /*SLIDESHOW*/
@@ -255,7 +255,7 @@ blockquote {
 }
 
 .event-datum h1 {
-    color:white;
+    color: white;
 }
 
 .event-foto {
@@ -285,7 +285,12 @@ div.contact .col-right {
     width: 50%;
 }
 
-.contact-table {}
+.contact-tabel {
+	width: 300px;
+	margin:auto;;
+	text-align: center;
+
+}
 
 
 .openingsuren-box {}
