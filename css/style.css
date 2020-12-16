@@ -176,18 +176,18 @@ q {
 }
 
 #mc_embed_signup {
-    background: #fff;
+    background: rgba(94,197,231, 0.5);
     clear: left;
     font-family: "Proxima Nova", sans-serif;
     font-size: 1rem;
     text-align:center;
-    /*border: 5px solid red;*/
     border-radius: 2em
-    
 }
 
 .nieuwsbrief {
     width: 50%;
+    margin-left: 300px;
+    
 }
 
 .validate div {
