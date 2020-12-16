@@ -1,4 +1,23 @@
+"use strict";
 // SCRIPT FORMULIER
+
+let emailTxt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

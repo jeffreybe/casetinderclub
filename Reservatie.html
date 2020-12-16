@@ -52,27 +52,29 @@
                 <li> Home base: voor een meerprijs van 1000 euro krijgt u all-in met een happy ending verzekerd.</li><br>
             </ul>
         </article>
-        <form class="reservatie" action="">
+        <form class="reservatie" id="formulier">
             <fieldset>
                 <legend>Algemene informatie</legend>
                 <p><label for="voornaam">Voornaam</label> <br>
-                    <input type="text" id="voornaam" required=""> </p>
+                    <input type="text" id="voornaam" required="">
+                </p>
                 <p><label for="achternaam">Achternaam</label> <br>
                     <input type="text" id="achternaam" required>
                 </p>
                 <p>
-                    <label for="email">Email</label> <br>
+                    <label for="email">Email</label><br>
                     <input type="email" name="email" id="email" required>
+                    <span class="error" id="email_error"></span>
                 </p>
                 <p>
                     <label for="aantal">Aantal personen</label> <br>
                     <input type="number" name="aantal" id="aantal" min="1" max="100" required>
                 </p>
                 <p><label for="pakket">Pakket:</label>
-                    <label><input type="radio" name="pakket" value="first">First Base</label>
-                    <label><input type="radio" name="pakket" value="second">Second Base</label>
-                    <label><input type="radio" name="pakket" value="third">Third Base</label>
-                    <label><input type="radio" name="pakket" value="home">Home Base</label>
+                    <label><input type="radio" name="pakket" value="first" id="firstbase">First Base</label>
+                    <label><input type="radio" name="pakket" value="second" id="secondbase">Second Base</label>
+                    <label><input type="radio" name="pakket" value="third" id="thirdbase">Third Base</label>
+                    <label><input type="radio" name="pakket" value="home" id="homebase">Home Base</label>
                 </p>
                 <button class="click">Betalen</button>
             </fieldset>
@@ -88,22 +90,30 @@
                         <option value="">Jukebox Tables</option>
                         <option value="">VIP Next to DJ</option>
                     </select></p>
-                <p><label for="tafel" required>Tafel </label><br><input type="number" name="tafel" id="tafel" min="1" max="10" required="">
+                <p>
+                    <label for="tafel" required>Tafel </label><br>
+                    <input type="number" name="tafel" id="tafel" min="1" max="10" required="">
                 </p>
-                <p><label for="datum">Datum</label> <br> <input type="date" name="datum" id="datum" required></p>
-                <p><label for="uur">Uur</label> <br><input type="time" name="time" id="tijd" required></p>
+                <p>
+                    <label for="datum">Datum</label><br>
+                    <input type="date" name="datum" id="datum" required>
+                </p> 
+            <p>
+                    <label for="uur">Uur</label><br>
+                    <input type="time" name="time" id="tijd" required>
+                </p> 
             </fieldset>
         </form>
     </div>
     <aside class="subfooter cf">
         <div class="container">
             <section class="subfooter-column left">
-                <h1 class="subfooter-title ">Adres</h1>
+                <h1 class="subfooter-title">Adres</h1>
                 <p>Liefdesstraat 420</p>
                 <p>1010 Tinderstad</p>
             </section>
             <section class="subfooter-column right">
-                <h1 class="subfooter-title ">Openingsuren</h1>
+                <h1 class="subfooter-title">Openingsuren</h1>
                 <p>23PM - 06AM</p>
                 <p>VRIJDAG-ZATERDAG-ZONDAG</p>
             </section>
