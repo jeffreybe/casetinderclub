@@ -11,7 +11,17 @@ body {
     font-family: "Proxima Nova", sans-serif;
     margin: 0;
     padding: 0;
-    /*background-color: #EBEAEA*/
+    background-color: #EBEAEA;
+
+}
+
+body > #clip {
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    /*position: absolute;*/
+    z-index: -1;
+    height: 70%;
+    width: 70%;
 }
 
 .container {
@@ -171,8 +181,13 @@ q {
     font-family: "Proxima Nova", sans-serif;
     font-size: 1rem;
     text-align:center;
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     border-radius: 2em
+    
+}
+
+.nieuwsbrief {
+    width: 50%;
 }
 
 .validate div {
