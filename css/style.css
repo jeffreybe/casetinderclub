@@ -15,15 +15,6 @@ body {
 
 }
 
-body > #clip {
-    background-color: white;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    /*position: absolute;*/
-    z-index: -1;
-    height: 70%;
-    width: 70%;
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -348,6 +339,13 @@ input.placeholder {
 
 /*CONTACT CONTENT*/
 
+body > #clippath {
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    z-index: -1;
+    height: 70%;
+    width: 70%;
+}
 
 .contact.container {
     width: 1200px;
@@ -367,7 +365,7 @@ div.contact .col-right {
     margin: auto;
     width: 300px;
     text-align: center;
-
+    padding-right: 10px;
 }
 
 .locatie-box {
