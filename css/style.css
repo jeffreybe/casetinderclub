@@ -12,7 +12,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EBEAEA;
-
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .container {
@@ -27,12 +29,12 @@ body {
 
 }
 
-header {
+/*header {
     background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-}
+}*/
 
 .main-header {
     display: flex;
@@ -49,10 +51,14 @@ header {
 
 
 /*BUTTON DROPDOWN*/
+nav {
+    margin-right: 500px;
+}
 
 nav a {
     text-decoration: none;
     color: #FF6A6A;
+    
 }
 
 button {
@@ -91,7 +97,8 @@ button {
 }
 
 .dropdown-content a:hover {
-    color: #FB2F78;
+    color: #FF6A6A;
+    font-size: 2rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -143,23 +150,35 @@ p.intro {
     text-align: justify;
     margin-left: 250px;
     padding-bottom: 20px;
+    color: white;
 }
 
 h1.intro {
     font-size: 3rem;
     margin-bottom: -20px;
+    color: white;
 }
 
 blockquote {
     padding: 20px 0;
     width: 1000px;
-    background-color: rgba(255,106,106,0.05);
+    /*background-color: rgba(255,106,106,0.07);*/
     text-align: center;
     font-size: 2rem;
     margin-left: 100px;
     font-family: "Coquette", sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+q, .q {
+    color: white;
+    /*text-shadow: 2px 2px #EBEAEA;*/
+}
+
+iframe {
+    margin-left: 280px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 button.reserveer-btn {
@@ -170,7 +189,7 @@ button.reserveer-btn {
 /*NIEWSBRIEF MAILCHIMP*/
 
 #mc_embed_signup {
-    background: rgba(94,197,231, 0.5);
+    background: rgba(94,197,231, 0.4);
     clear: left;
     font-family: "Proxima Nova", sans-serif;
     font-size: 1rem;
@@ -342,9 +361,9 @@ input.placeholder {
 body > #clippath {
     background-color: white;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    z-index: -1;
-    height: 70%;
-    width: 70%;
+    /*z-index: -1;*/
+    height: 200%;
+    width: 60%;
 }
 
 .contact.container {
@@ -365,18 +384,24 @@ div.contact .col-right {
     margin: auto;
     width: 300px;
     text-align: center;
-    padding-right: 10px;
 }
 
 .locatie-box {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+.googlemap {
+    margin-left: -0px;
+    margin-bottom: 300px;
 }
 
 .prijs-box .click {
     margin-left: 200px;
     margin-top: 22px;
 }
+
 
 /*TEKST */
 
@@ -389,16 +414,19 @@ h1 {
     padding: 1em;
     font-size: 2em;
     text-transform: uppercase;
+    
 }
 
 h2 {
     font-size: 1rem;
     font-style: italic;
+    color: white;
 }
 
 p,
 td {
-    color: #2c2c2c;
+    /*color: #2c2c2c;*/
+    color: white;
     font-size: 1rem;
 }
 
@@ -478,6 +506,16 @@ legend {
 
 }
 
+.reservatie input , .select {
+    border-radius: 20px;
+    background-color: #EBEAEA;
+    border-radius: 10px;
+    border: 2px solid rgb(94,197,231,0.5);
+    padding: 10px 30px;
+    transition: .3s;
+    outline: none;
+}
+
 
 /*MEMBERSHIP*/
 
@@ -512,7 +550,7 @@ aside.subfooter {
 }
 
 .subfooter {
-    background-image: linear-gradient(to right, #FB2F78, #FF6A6A);
+    /*background-image: linear-gradient(to right, #FB2F78, #FF6A6A);*/
     /*background-color: #FF6A6A;*/
     color: white;
 }
@@ -537,7 +575,7 @@ aside.subfooter {
 }
 
 .main-footer {
-    background-image: linear-gradient(to right, #FB2F78, #FF6A6A);
+    /*background-image: linear-gradient(to right, #FB2F78, #FF6A6A);*/
     /*background-color: #FF6A6A;*/
     color: white;
     padding: .2rem;
@@ -545,19 +583,22 @@ aside.subfooter {
 }
 
 .subfooter h1 {
-    color: #2C2C2C;
+    /*color: #2C2C2C;*/
+    color: white;
     font-size: 16px;inherit;
 }
 
 .subfooter p {
     font-size: 13px inherit;
-    color: #2C2C2C;
+    /*color: #2C2C2C;*/
+    color: white;
     text-align: center;
 }
 
 .main-footer p {
     font-size: 13px inherit;
-    color: rgba(44,44,44,0.3);
+    /*color: rgba(44,44,44,0.3);*/
+    color: white;
     margin-right: 500px;
 }
 

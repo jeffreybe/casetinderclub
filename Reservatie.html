@@ -33,7 +33,9 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="contact.html">Contact</a>
+                    <button class="dropbtn">
+                        <a class="active" href="contact.html">Contact</a>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -68,7 +70,7 @@
                 </p>
                 <p>
                     <label for="aantal">Aantal personen</label> <br>
-                    <input type="number" name="aantal" id="aantal" min="1" max="100" required>
+                    <input type="number" placeholder="0" name="aantal" id="aantal" min="1" max="100" required>
                 </p>
                 <p><label for="pakket">Pakket:</label>
                     <label><input type="radio" name="pakket" value="first" id="firstbase">First Base</label>
@@ -76,31 +78,31 @@
                     <label><input type="radio" name="pakket" value="third" id="thirdbase">Third Base</label>
                     <label><input type="radio" name="pakket" value="home" id="homebase">Home Base</label>
                 </p>
-                <button class="click">Betalen</button>
+                
             </fieldset>
             <fieldset>
                 <legend>Bestelling</legend>
                 <p>
                     <label for="opties">Zone</label> <br>
-                    <select>
-                        <option value="">VIP Box</option>
-                        <option value="">Hightable</option>
-                        <option value="">Hightables Dancefloor</option>
-                        <option value="">Dancefloor Seats</option>
-                        <option value="">Jukebox Tables</option>
-                        <option value="">VIP Next to DJ</option>
+                    <select class="select">
+                        <option value="0" class="option">VIP Box</option>
+                        <option value="1" class="option">Hightable</option>
+                        <option value="2" class="option">Hightables Dancefloor</option>
+                        <option value="3" class="option">Dancefloor Seats</option>
+                        <option value="4" class="option">Jukebox Tables</option>
+                        <option value="5" class="option">VIP Next to DJ</option>
                     </select>
                 </p>
                 <p>
                     <label for="tafel" required>Tafel </label><br>
-                    <input type="number" name="tafel" id="tafel" min="1" max="10" required="">
+                    <input type="number" name="tafel" placeholder="1" id="tafel" min="1" max="10" required="">
                 </p>
                 <p>
                     <label for="datum">Datum</label><br>
                     <input type="date" name="datum" id="datum" required>
                 </p> 
-        
             </fieldset>
+            <button class="click" class="reservatie-btn">Betalen</button>
         </form>
     </div>
     <aside class="subfooter cf">
