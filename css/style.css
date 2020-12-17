@@ -487,6 +487,9 @@ a:active {
 
 /*RESERVATIE*/
 
+.error {
+    color: red;
+}
 .image {
     display: flex;
     flex-direction: row;

@@ -54,59 +54,61 @@
                 <li> Home base: voor een meerprijs van 1000 euro krijgt u all-in met een happy ending verzekerd.</li>
             </ul>
         </article>
-        <form class="reservatie" id="formulier">
+        <form name="form" class="reservatie" id="formulier">
             <fieldset>
                 <legend>Algemene informatie</legend>
                 <p><label for="voornaam">Voornaam</label> <br>
-                    <input type="text" id="voornaam"> <br>
-                    <span class="error" id="voornaam_error"></span>
-                </p>
-                <p><label for="achternaam">Achternaam</label> <br>
-                    <input type="text" id="achternaam"> <br>
-                    <span class="error" id="achternaam_error"></span>
-                </p>
+                <input type="text" id="voornaam"> <br>
+                <span class="error" id="voornaam_error"></span>
+            </p>
+            <p><label for="achternaam">Achternaam</label> <br>
+                <input type="text" id="achternaam"> <br>
+                <span class="error" id="achternaam_error"></span>
+            </p>
                 <p>
                     <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email"> <br>
+                    <input type="text" name="email" id="email" value="">
                     <span class="error" id="email_error"></span>
                 </p>
                 <p>
-                    <label for="aantal">Aantal personen</label> <br>
-                    <input type="number" placeholder="0" name="aantal" id="aantal"> <br>
-                    <span class="error" id="aantal_error"></span>
+                <label for="aantal">Aantal personen</label> <br>
+                <input type="number" placeholder="0" name="aantal" id="aantal"> <br>
+                <span class="error" id="aantal_error"></span>
+            </p>
+                <p><label for="pakket">Pakket:</label>
+                    <label><input type="radio" name="pakket" value="firstBase" id="firstBase" class="pakket">First Base</label>
+                    <label><input type="radio" name="pakket" value="secondBase" id="secondBase" class="pakket">Second Base</label>
+                    <label><input type="radio" name="pakket" value="thirdBase" id="thirdBase" class="pakket">Third Base</label>
+                    <label><input type="radio" name="pakket" value="homeBase" id="homeBase" class="pakket" >Home Base</label>
+                    <span class="error" id="pakket_error"></span>
                 </p>
-                <p><label id="pakket">Pakket:</label>
-                    <label><input type="radio" name="pakket" value="first" id="firstbase">First Base</label>
-                    <label><input type="radio" name="pakket" value="second" id="secondbase">Second Base</label>
-                    <label><input type="radio" name="pakket" value="third" id="thirdbase">Third Base</label>
-                    <label><input type="radio" name="pakket" value="home" id="homebase">Home Base</label>
-                </p>
-            </fieldset>
+                </fieldset>
             <fieldset>
                 <legend>Bestelling</legend>
                 <p>
-                    <label for="opties">Zone</label> <br>
-                    <select class="select" id="zone">
-                        <option value="">Selecteer</option>
-                        <option value="vip box" class="option">VIP Box</option>
-                        <option value="hightable" class="option">Hightable</option>
-                        <option value="hightables dancefloor" class="option">Hightables Dancefloor</option>
-                        <option value="dancefloor seats" class="option">Dancefloor Seats</option>
-                        <option value="jukebox tables" class="option">Jukebox Tables</option>
-                        <option value="vip next to dj" class="option">VIP Next to DJ</option>
-                    </select> <br>
-                    <span class="error" id="zone_error"></span>
-                </p>
+                <label for="opties">Zone</label> <br>
+                <select class="select" id="zone">
+                    <option value="">Selecteer</option>
+                    <option value="vip box" class="option">VIP Box</option>
+                    <option value="hightable" class="option">Hightable</option>
+                    <option value="hightables dancefloor" class="option">Hightables Dancefloor</option>
+                    <option value="dancefloor seats" class="option">Dancefloor Seats</option>
+                    <option value="jukebox tables" class="option">Jukebox Tables</option>
+                    <option value="vip next to dj" class="option">VIP Next to DJ</option>
+                </select> <br>
+                <span class="error" id="zone_error"></span>
+            </p>
                 <p>
                     <label for="tafel">Tafel</label><br>
-                    <input type="number" name="tafel" placeholder="1" id="tafel">
+                    <input type="number" name="tafel" id="tafel">
+                    <span class="error" id="tafel_error"></span>
                 </p>
                 <p>
                     <label for="datum">Datum</label><br>
-                    <input type="date" name="datum" id="datum">
+                    <input type="date" value="" name="datum" id="datum" required>
+                    <span class="error" id="datum_error"></span>
                 </p>
-                <!-- <button class="click reservatie-btn" onclick="verstuur()"></button> -->
-                <input type="button" class="click reservatie-btn" value="Betalen" onclick="verstuur()">
+                <input type="button" class="click" onclick="verstuur()" value="Betalen">
             </fieldset>
         </form>
     </div>
@@ -130,7 +132,5 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/script-2.js"></script>
-</body>
-
+</body>    
 </html>
