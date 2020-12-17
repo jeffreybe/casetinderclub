@@ -34,7 +34,7 @@
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a class="active" href="contact.html">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </button>
                 </div>
             </nav>
@@ -58,19 +58,22 @@
             <fieldset>
                 <legend>Algemene informatie</legend>
                 <p><label for="voornaam">Voornaam</label> <br>
-                    <input type="text" id="voornaam" required="">
+                    <input type="text" id="voornaam"> <br>
+                    <span class="error" id="voornaam_error"></span>
                 </p>
                 <p><label for="achternaam">Achternaam</label> <br>
-                    <input type="text" id="achternaam" required>
+                    <input type="text" id="achternaam"> <br>
+                    <span class="error" id="achternaam_error"></span>
                 </p>
                 <p>
                     <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email"> <br>
                     <span class="error" id="email_error"></span>
                 </p>
                 <p>
                     <label for="aantal">Aantal personen</label> <br>
-                    <input type="number" placeholder="0" name="aantal" id="aantal" min="1" max="100" required>
+                    <input type="number" placeholder="0" name="aantal" id="aantal"> <br>
+                    <span class="error" id="aantal_error"></span>
                 </p>
                 <p><label id="pakket">Pakket:</label>
                     <label><input type="radio" name="pakket" value="first" id="firstbase">First Base</label>
@@ -82,25 +85,28 @@
             <fieldset>
                 <legend>Bestelling</legend>
                 <p>
-                    <label id="opties">Zone</label> <br>
-                    <select class="select">
-                        <option value="0" class="option">VIP Box</option>
-                        <option value="1" class="option">Hightable</option>
-                        <option value="2" class="option">Hightables Dancefloor</option>
-                        <option value="3" class="option">Dancefloor Seats</option>
-                        <option value="4" class="option">Jukebox Tables</option>
-                        <option value="5" class="option">VIP Next to DJ</option>
-                    </select>
+                    <label for="opties">Zone</label> <br>
+                    <select class="select" id="zone">
+                        <option value="">Selecteer</option>
+                        <option value="vip box" class="option">VIP Box</option>
+                        <option value="hightable" class="option">Hightable</option>
+                        <option value="hightables dancefloor" class="option">Hightables Dancefloor</option>
+                        <option value="dancefloor seats" class="option">Dancefloor Seats</option>
+                        <option value="jukebox tables" class="option">Jukebox Tables</option>
+                        <option value="vip next to dj" class="option">VIP Next to DJ</option>
+                    </select> <br>
+                    <span class="error" id="zone_error"></span>
                 </p>
                 <p>
-                    <label for="tafel">Tafel </label><br>
-                    <input type="number" name="tafel" placeholder="1" id="tafel" min="1" max="10" required="">
+                    <label for="tafel">Tafel</label><br>
+                    <input type="number" name="tafel" placeholder="1" id="tafel">
                 </p>
                 <p>
                     <label for="datum">Datum</label><br>
-                    <input type="date" name="datum" id="datum" required>
+                    <input type="date" name="datum" id="datum">
                 </p>
-                <button class="click reservatie-btn">Betalen</button>
+                <!-- <button class="click reservatie-btn" onclick="verstuur()"></button> -->
+                <input type="button" class="click reservatie-btn" value="Betalen" onclick="verstuur()">
             </fieldset>
         </form>
     </div>
@@ -123,7 +129,8 @@
             <p>© 2020 TinderClub - All Rights Reserved. </p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/script-2.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>
