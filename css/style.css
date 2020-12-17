@@ -574,14 +574,18 @@ legend.legend {
 
 .kaart h1 {
     padding: .5em 1em 0;
+    text-align: center;
 }
 
 .kaart ul li {
     color: white;
     text-decoration: none;
-    text-align: left;
     line-height: 50px
 }
+
+.kaart ul{
+   margin-left: -40px;
+} 
 
 /*JAVASCRIPT*/
 .error {
