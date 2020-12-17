@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservatie</title>
-    <link rel="stylesheet" rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a class="active" href="reservatie.html">Reservatie</a>
+                        <a href="reservatie.html">Reservatie</a>
                     </button>
                     <div class="dropdown-content">
                         <a href="membership.html">Membership</a>
@@ -48,10 +48,10 @@
         <article class="map-beschrijving">
             <p>U heeft de keuze om te reserveren op verschillende locaties in onze ruime zaal. Samen met vrienden gezellig een drankje benuttigen in een gesloten ruimte of naast de knappe DJ staan, is allemaal mogelijk. Daarbij kunt u vrijblijvend een pakket kiezen.</p>
             <ul>
-                <li>First base: voor een meerprijs van 200 euro krijgt u 2 flessen champagne en snacks.</li><br>
-                <li>Second base: voor een meerprijs van 500 euro krijgt u 5 flessen champagne en snacks.</li><br>
-                <li>Third base: voor een meerprijs van 900 euro krijgt 10 flessen champagne en snacks samen met een exotische dans van onze mannelijke en vrouwelijke performers.</li><br>
-                <li> Home base: voor een meerprijs van 1000 euro krijgt u all-in met een happy ending verzekerd.</li><br>
+                <li>First base: voor een meerprijs van 200 euro krijgt u 2 flessen champagne en snacks.</li>
+                <li>Second base: voor een meerprijs van 500 euro krijgt u 5 flessen champagne en snacks.</li>
+                <li>Third base: voor een meerprijs van 900 euro krijgt 10 flessen champagne en snacks samen met een exotische dans van onze mannelijke en vrouwelijke performers.</li>
+                <li> Home base: voor een meerprijs van 1000 euro krijgt u all-in met een happy ending verzekerd.</li>
             </ul>
         </article>
         <form class="reservatie" id="formulier">
@@ -72,18 +72,17 @@
                     <label for="aantal">Aantal personen</label> <br>
                     <input type="number" placeholder="0" name="aantal" id="aantal" min="1" max="100" required>
                 </p>
-                <p><label for="pakket">Pakket:</label>
+                <p><label id="pakket">Pakket:</label>
                     <label><input type="radio" name="pakket" value="first" id="firstbase">First Base</label>
                     <label><input type="radio" name="pakket" value="second" id="secondbase">Second Base</label>
                     <label><input type="radio" name="pakket" value="third" id="thirdbase">Third Base</label>
                     <label><input type="radio" name="pakket" value="home" id="homebase">Home Base</label>
                 </p>
-                
             </fieldset>
             <fieldset>
                 <legend>Bestelling</legend>
                 <p>
-                    <label for="opties">Zone</label> <br>
+                    <label id="opties">Zone</label> <br>
                     <select class="select">
                         <option value="0" class="option">VIP Box</option>
                         <option value="1" class="option">Hightable</option>
@@ -94,15 +93,15 @@
                     </select>
                 </p>
                 <p>
-                    <label for="tafel" required>Tafel </label><br>
+                    <label for="tafel">Tafel </label><br>
                     <input type="number" name="tafel" placeholder="1" id="tafel" min="1" max="10" required="">
                 </p>
                 <p>
                     <label for="datum">Datum</label><br>
                     <input type="date" name="datum" id="datum" required>
-                </p> 
+                </p>
+                <button class="click reservatie-btn">Betalen</button>
             </fieldset>
-            <button class="click" class="reservatie-btn">Betalen</button>
         </form>
     </div>
     <aside class="subfooter cf">
