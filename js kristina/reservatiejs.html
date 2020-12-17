@@ -11,26 +11,27 @@
                 <legend>Algemene informatie</legend>
                 <p>
                     <label for="email">Email</label><br>
-                    <input type="text" name="email" id="email" required="">
+                    <input type="text" name="email" id="email" value="">
                     <span class="error" id="email_error"></span>
                 </p>
-           		<!-- <p><label for="pakket">Pakket:</label>
-                    <label><input type="radio" name="pakket" value="first" id="firstBase" class="pakket">First Base</label>
-                    <label><input type="radio" name="pakket" value="second" id="secondBase" class="pakket">Second Base</label>
-                    <label><input type="radio" name="pakket" value="third" id="thirdBase" class="pakket">Third Base</label>
-                    <label><input type="radio" name="pakket" value="home" id="homeBase" class="pakket">Home Base</label>
+           		<p><label for="pakket">Pakket:</label>
+                    <label><input type="radio" name="pakket" value="firstBase" id="firstBase" class="pakket">First Base</label>
+                    <label><input type="radio" name="pakket" value="secondBase" id="secondBase" class="pakket">Second Base</label>
+                    <label><input type="radio" name="pakket" value="thirdBase" id="thirdBase" class="pakket">Third Base</label>
+                    <label><input type="radio" name="pakket" value="homeBase" id="homeBase" class="pakket" >Home Base</label>
                     <span class="error" id="pakket_error"></span>
-                </p> -->
+                </p>
                 <p>
-                    <label for="tafel" required>Tafel</label><br>
-                    <input type="number" name="tafel" id="tafel" min="1" max="10" required>
+                    <label for="tafel">Tafel</label><br>
+                    <input type="number" name="tafel" id="tafel">
                     <span class="error" id="tafel_error"></span>
                 </p>
                 <p>
                     <label for="datum">Datum</label><br>
-                    <input type="date" name="datum" id="datum" required>
+                    <input type="date" value="" name="datum" id="datum" required>
+                    <span class="error" id="datum_error"></span>
                 </p>
-                <button class="click" onclick="verstuur()">Betalen</button>
+                <input type="button" class="click" onclick="verstuur()" value="Betalen">
             </fieldset>
         </form>
 </body>
