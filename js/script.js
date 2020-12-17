@@ -1,22 +1,22 @@
 "use strict";
 // SCRIPT FORMULIER
+let voornaamTxt;
+let achternaamTxt;
 let emailTxt;
+let aantalPersonen;
+let pakket;
 let firstBase;
 let secondBase;
 let thirdBase;
 let homeBase;
 let allePakketten;
-let pakket;
+let zone;
+let gekozenZone;
 let tafelTxt;
 let tafelNummer;
 let datum;
 let gekozenDatum;
 let vandaagDatum;
-let voornaamTxt;
-let achternaamTxt;
-let aantalPersonen;
-let zone;
-let gekozenZone;
 let allesCorrectIngevuld = true;
 
 function controleerVoorwaardenVoornaam() {
@@ -48,11 +48,7 @@ function controleerVoorwaardenEmail() {
 
 function controleerVoorwaardenAantalPersonen() {
 
-    if (aantalPersonen > 100) {
-        document.getElementById("aantal_error").innerHTML = "Uw groep is te groot."
-    }
-
-    if (aantalPersonen < 1) {
+    if (aantalPersonen < 1 || aantalPersonen == 0) {
         document.getElementById("aantal_error").innerHTML = "Geef een geldig getal in."
     } else {
         document.getElementById("aantal_error").innerHTML = "";
@@ -76,16 +72,16 @@ function controleerVoorwaardenDatum() {
 
 function verstuur() {
 
+    voornaamTxt = document.getElementById("voornaam").value;
+    achternaamTxt = document.getElementById("achternaam").value;
     emailTxt = document.getElementById("email").value;
+    aantalPersonen = document.getElementById("aantal").value;
     allePakketten = document.getElementsByName("pakket");
+    zone = document.getElementById("zone").value;
+    gekozenZone = document.getElementById("zone").selectedIndex;
     tafelTxt = document.getElementById("tafel");
     tafelNummer = document.getElementById("tafel").value;
     datum = document.getElementById("datum").value;
-    voornaamTxt = document.getElementById("voornaam").value;
-    achternaamTxt = document.getElementById("achternaam").value;
-    aantalPersonen = document.getElementById("aantal").value;
-    zone = document.getElementById("zone").value;
-    gekozenZone = document.getElementById("zone").selectedIndex;
     allesCorrectIngevuld = true;
 
 
@@ -93,6 +89,7 @@ function verstuur() {
         document.getElementById("voornaam_error").innerHTML = "Gelieve uw voornaam in te vullen.";
         allesCorrectIngevuld = false
     } else {
+        document.getElementById("voornaam_error").innerHTML = "";
         controleerVoorwaardenVoornaam()
     }
 
@@ -101,10 +98,11 @@ function verstuur() {
         allesCorrectIngevuld = false
 
     } else {
+        document.getElementById("achternaam_error").innerHTML = "";
         controleerVoorwaardenAchternaam();
     }
 
-    //controle email ingevuld
+    //controle email 
     if (emailTxt.length == 0) {
         document.getElementById("email_error").innerHTML = "Vul in a.u.b.";
         allesCorrectIngevuld = false;
@@ -112,15 +110,10 @@ function verstuur() {
         controleerVoorwaardenEmail();
     }
 
-    if (aantalPersonen < 1) {
-        document.getElementById("aantal_error").innerHTML = "Gelieve een cijfer in te vullen.";
-        allesCorrectIngevuld = false
+    if (aantalPersonen > 100) {
+        document.getElementById("aantal_error").innerHTML = "Uw groep is te groot."
     }
-
-    if (aantalPersonen == 0) {
-        document.getElementById("aantal_error").innerHTML = "Gelieve een getal in te voeren";
-        allesCorrectIngevuld = false
-    } else {
+    else {
         controleerVoorwaardenAantalPersonen();
     }
     // controle pakket 
@@ -141,6 +134,14 @@ function verstuur() {
     if (pakket.length == 0)
         allesCorrectIngevuld = false;
 
+    //controle zone
+    if (gekozenZone == 0) {
+        document.getElementById("zone_error").innerHTML = "Gelieve een optie te kiezen.";
+        allesCorrectIngevuld = false
+    } else {
+        document.getElementById("zone_error").innerHTML = "";
+    }
+
     // keuze tafel nummer 
     if (tafelNummer == 0 || tafelNummer > 10 || tafelNummer < 0) {
         document.getElementById("tafel_error").innerHTML = "Kies een geldig tafelnummer a.u.b.";
@@ -148,12 +149,6 @@ function verstuur() {
     } else {
         document.getElementById("tafel_error").innerHTML = "";
     }
-
-    if (gekozenZone == 0) {
-        document.getElementById("zone_error").innerHTML = "Gelieve een optie te kiezen.";
-        allesCorrectIngevuld = false
-    }
-
 
     //datum 
 
@@ -186,11 +181,11 @@ function verstuur() {
             "pakket:" +
             encodeURIComponent(pakket) +
             encodeURIComponent("\r\n\n") +
-            "tafel:" +
-            encodeURIComponent(tafelTxt) +
-            encodeURIComponent("\r\n\n") +
             "zone:" +
             encodeURIComponent(zone) +
+            encodeURIComponent("\r\n\n") +
+            "tafel:" +
+            encodeURIComponent(tafelTxt) +
             encodeURIComponent("\r\n\n") +
             "datum:" +
             encodeURIComponent(datum) +
@@ -198,9 +193,6 @@ function verstuur() {
         window.location.href = link;
     }
 } //einde verstuur();
-
-
-//MAILCHIMP 
 
 // SCRIPT SLIDESHOW
 var slideIndex = 1;

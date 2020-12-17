@@ -31,23 +31,14 @@ body {
 }
 
 header {
-  width: 1200px;
+    width: 1200px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
-
-
-/*header {
-    background-image: url(../img/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-}*/
 
 .main-header {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /*justify-content:start;*/
-   
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 1em 0
 }
 
@@ -67,7 +58,6 @@ nav {
 nav a {
     text-decoration: none;
     color: #FF6A6A;
-
 }
 
 button {
@@ -107,7 +97,6 @@ button {
 
 .dropdown-content a:hover {
     color: #FF6A6A;
-    /*font-size: 2rem;*/
 }
 
 .dropdown:hover .dropdown-content {
@@ -118,7 +107,6 @@ button {
 
 a.active {
     background-color: transparent;
-
 }
 
 /*BUTTON*/
@@ -143,15 +131,11 @@ button.click {
 .slogan {
     width: 60%;
     margin-left: 250px;
-
 }
 
 .intro p {
     font-size: 1.5rem;
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-
+    font-family: "Proxima Nova", sans-serif;
 }
 
 p.intro {
@@ -163,15 +147,19 @@ p.intro {
 }
 
 h1.intro {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: -20px;
     color: white;
 }
 
+h1.entity {
+    font-size: 6rem;
+    margin-top: -50px;
+    margin-bottom: -100px;
+}   
 blockquote {
     padding: 20px 0;
     width: 1000px;
-    /*background-color: rgba(255,106,106,0.07);*/
     text-align: center;
     font-size: 2rem;
     margin-left: 100px;
@@ -183,7 +171,6 @@ blockquote {
 q,
 .q {
     color: white;
-    /*text-shadow: 2px 2px #EBEAEA;*/
 }
 
 iframe {
@@ -195,12 +182,13 @@ iframe {
 button.reserveer-btn {
     padding: 20px;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 /*NIEWSBRIEF MAILCHIMP*/
 
 #mc_embed_signup {
-    background: rgba(94, 197, 231, 0.4);
+    background: rgba(94, 197, 231, 0.2);
     clear: left;
     font-family: "Proxima Nova", sans-serif;
     font-size: 1rem;
@@ -213,7 +201,6 @@ p.mc-text,
 h2.mc-text {
     color: white;
     padding-bottom: 20px;
-
 }
 
 h2.mc-text {
@@ -224,7 +211,7 @@ h2.mc-text {
 
 button.mc-btn {
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .mc-btn {
@@ -244,7 +231,7 @@ button.mc-btn {
 .mc-field-group input {
     background-color: #EBEAEA;
     border-radius: 20px;
-    border: 4px solid rgb(94, 197, 231, 0.5);
+    border: 4px solid rgb(94, 197, 231, 0.2);
     padding: 10px 30px;
     transition: .3s;
     outline: none;
@@ -255,7 +242,7 @@ input.placeholder {
 }
 
 .mc-field-group input:focus {
-    border: 4px solid rgb(94, 197, 231, 0.2);
+    border: 4px solid rgb(94, 197, 231, 0.7);
 }
 
 /*SLIDESHOW*/
@@ -445,7 +432,6 @@ h1 {
     padding: 1em;
     font-size: 2em;
     text-transform: uppercase;
-
 }
 
 h2 {
@@ -457,7 +443,6 @@ h2 {
 p,
 td {
     color: #2c2c2c;
-    /*color: white;*/
     font-size: 1rem;
 }
 
@@ -470,7 +455,7 @@ td {
 }
 
 a:hover {
-    color:#FF6A6A;
+    color: #FF6A6A;
 }
 
 a:link,
@@ -487,14 +472,10 @@ a:active {
 
 /*RESERVATIE*/
 
-.error {
-    color: red;
-}
 .image {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 img.map {
@@ -511,24 +492,25 @@ img.map {
 
 .map-beschrijving p {
     line-height: 20px;
-    width: 400px;
+    width: 300px;
     color: white;
-
+    padding-right: 120px;
+    text-align: justify;
 }
 
 .map-beschrijving ul {
-    width: 400px;
-
+    width: 300px;
 }
 
 .map-beschrijving ul li {
     color: white;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 fieldset {
     border: none;
-    width:1000px;
+    width: 1000px;
 }
 
 legend {
@@ -538,7 +520,6 @@ legend {
 
 #formulier p {
     color: white;
-
 }
 
 .reservatie {
@@ -547,7 +528,6 @@ legend {
     justify-content: center;
     width: 800px;
     margin: auto;
-
 }
 
 .reservatie input,
@@ -561,7 +541,20 @@ legend {
     outline: none;
 }
 
+input.btn {
+    background-color: #FF6A6A;
+    color: #EBEAEA;
+    font-weight: bold;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: -200px;
+    font-size: 1rem;
+}
 
+legend.legend {
+    color:#FF6A6A;
+}
 /*MEMBERSHIP*/
 
 .member {
@@ -594,7 +587,6 @@ legend {
 .error {
     font-size: 10px;
     color: red
-    
 }
 
 /*FOOTER*/
@@ -604,9 +596,8 @@ aside.subfooter {
 }
 
 .subfooter {
-    /*background-image: linear-gradient(to right, #FB2F78, #FF6A6A);*/
-    /*background-color: #FF6A6A;*/
     color: white;
+    padding-top: 50px;
 }
 
 .subfooter-title {
@@ -616,6 +607,7 @@ aside.subfooter {
 
 .subfooter p {
     font-size: 15px;
+    
 }
 
 .subfooter-column.left {
@@ -629,30 +621,24 @@ aside.subfooter {
 }
 
 .main-footer {
-    /*background-image: linear-gradient(to right, #FB2F78, #FF6A6A);*/
-    /*background-color: #FF6A6A;*/
     color: white;
     padding: .2rem;
     text-align: right;
 }
 
 .subfooter h1 {
-    /*color: #2C2C2C;*/
     color: white;
     font-size: 16px;
-    inherit;
 }
 
 .subfooter p {
     font-size: 13px inherit;
-    /*color: #2C2C2C;*/
     color: white;
     text-align: center;
 }
 
 .main-footer p {
     font-size: 13px inherit;
-    /*color: rgba(44,44,44,0.3);*/
     color: white;
     margin-right: 500px;
 }
